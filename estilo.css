@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* cor de fundo da página */
+}
+ 
+/* Wrapper do formulário para controle adicional de estilo */
+.form-wrapper {
+    background-color: white;
+    padding: 20px;
+    border: 10px solid #d3d3d3; /* borda cinza ao redor do formulário */
+    max-width: 500px; /* largura máxima do formulário */
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra para o formulário */
+    text-align: center; /* centraliza o texto dentro do formulário */
+}
+ 
+/* Estilo para o título */
+.form-wrapper h2 {
+    color: white; /* cor do título */
+    background-color: #d3d3d3; /* cor de fundo do título */
+    margin: -20px -20px 20px -20px; /* remove o padding extra ao redor do título */
+    padding: 20px; /* espaçamento interno do título */
+}
+ 
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+/* Agrupamento de rótulo e campo */
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinha os itens à esquerda */
+    margin-bottom: 10px; /* espaço de 10px entre os grupos de campo */
+}
+ 
+/* Estilos para os campos e rótulos do formulário */
+label {
+    margin-bottom: 5px;
+}
+ 
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 6px); /* largura ajustada para compensar a margem */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0; /* pontas retas */
+}
+ 
+textarea {
+    height: 100px; /* altura da área de texto */
+}
+ 
+button {
+    padding: 10px;
+    background-color: #d3d3d3; /* botão cinza */
+    border: none;
+    border-radius: 5px; /* bordas arredondadas */
+    cursor: pointer;
+    width: calc(100% - 6px); /* largura ajustada para compensar a margem */
+}
+ 
+button:hover {
+    background-color: #b0b0b0; /* cinza mais escuro ao passar o mouse */
+}
